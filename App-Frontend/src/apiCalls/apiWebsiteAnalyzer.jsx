@@ -7,7 +7,7 @@ export const useAnalyzeWebsite = () => {
             await new Promise((resolve) => setTimeout(resolve, 2000));
 
             const { data } = await axios.post(
-                "http://127.0.0.1:8000/api/v1/analyzewebsite",
+                "https://parsingsiteproject.onrender.com/api/v1/analyzewebsite",
                 { url }
             );
 
